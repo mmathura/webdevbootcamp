@@ -1,0 +1,19 @@
+<!-- YelpCamp show info about a campground -->
+
+<% include ../partials/header %>
+
+<!-- <h1>This is the show template</h1> -->
+
+<h1><%= campground.name %></h1>
+
+<img src="<%= campground.image %>">
+
+<p><%= campground.description %></p>
+
+<p><a class="btn btn-success" href="/campgrounds/<%= campground._id %>/comments/new">Add a comment</a></p>
+
+<% campground.comments.forEach(function(comment) { %> 
+    <p><%= comment.text %> - <strong><%= comment.author %></strong></p>
+<% }); %> 
+
+<% include ../partials/footer %>

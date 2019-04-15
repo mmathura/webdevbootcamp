@@ -1,0 +1,12 @@
+<h1>Movies</h1>
+
+<ul>
+    <% for(var i = 0; i < data["Search"].length; i++) { %>
+        <li>
+            <em><%= data["Search"][i]["Title"] %></em> (<%= data["Search"][i]["Year"] %>)
+        </li>
+    <% } %>
+</ul>
+
+<a href="/">Search again</a>
+

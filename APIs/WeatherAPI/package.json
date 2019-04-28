@@ -1,0 +1,17 @@
+{
+  "name": "weatherapi",
+  "version": "1.0.0",
+  "description": "WeatherAPI 2 Demo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mitch Mathura",
+  "license": "ISC",
+  "devDependencies": {
+    "locus": "^2.0.1",
+  },
+  "dependencies": {
+    "request-promise": "^4.2.4"
+  }
+}
